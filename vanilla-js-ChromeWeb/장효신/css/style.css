@@ -1,0 +1,143 @@
+/* For desktop: */
+
+* {
+  box-sizing: border-box;
+  color: white; /* text color */
+  text-align: center;
+  margin: 0;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* menu button*/
+.web-menu {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 500;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  background-color: black;
+  border: 0;
+}
+/* menu */
+.menuwrap {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 400;
+  overflow: auto;
+  width: 300px;
+  height: 100%;
+
+  padding: 50px 20px;
+  transition: right 0.3s ease-in-out; /* 0.3초 동안 이동 애니메이션 */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menuwrap.on {
+  right: 0;
+}
+
+ul li.click {
+  text-decoration: line-through;
+}
+
+.item-1 {
+  padding-top: 60px;
+  grid-column: 1 / span 2;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-auto-columns: minmax(200px, 400px);
+  grid-gap: 30px;
+  grid-auto-rows: minmax(150px, auto);
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  left: 30%;
+}
+
+#todo-form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  border-bottom: 3px solid black;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 20px;
+  margin: auto;
+  height: auto;
+  width: 250px;
+  border-radius: 20px;
+  /* text-align: left !important; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#quote {
+  padding: 20px;
+  grid-column: 1 / span 2;
+  margin: auto;
+  height: 100%;
+  line-height: 4;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#clock,
+#weather {
+  line-height: 4;
+  padding: 20px;
+  margin: auto;
+  height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#greeting {
+  font-size: 50px;
+}
+.hidden {
+  display: none;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.img {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  /*z-index: -1;*/
+}
+
+/*
+.img-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+*/
