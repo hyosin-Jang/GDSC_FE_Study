@@ -15,6 +15,9 @@
   }
 }
 
+li {
+  text-align: left;
+}
 /* menu button*/
 .web-menu {
   display: block;
@@ -100,7 +103,7 @@ ul li.click {
 
 #clock,
 #weather {
-  line-height: 4;
+  line-height: 2;
   padding: 20px;
   margin: auto;
   height: 150px;
@@ -131,6 +134,18 @@ ul li.click {
   height: 100vh;
   background-size: cover;
   /*z-index: -1;*/
+}
+
+/*default 속성 제거*/
+button {
+  -webkit-appearence: none;
+  -moz-appearence: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent !important;
+  border-color: transparent;
+  border: none;
+  color: black !important;
 }
 
 /*
