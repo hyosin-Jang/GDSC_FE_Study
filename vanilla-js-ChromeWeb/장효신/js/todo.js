@@ -4,27 +4,14 @@ const toDoInput = toDoForm.querySelector("input");
 const percent = document.querySelector("#percent h2:first-child");
 const percentTodo = document.querySelector("#percent h2:last-child");
 const TODO_KEYS = "todos";
+const CLICK = "click";
 
 let toDos = [];
 
-/**
- * @function
- * 1. 1, 0을 localStorage에 같이 저장한다. 1은 달성 완료인 것,
- *       0은 아직 달성하지 않은 상태이다.
- * 2. 현재 UI 옆에 체크 버튼을 클릭하면, 가로로 줄이 그어지고 (css변경)
- *    check 값이 0에서 1로 바뀌며, 달성률을 계산하는 함수가 업데이트 되고 (4/7)
- *    총 몇 퍼센트 달성했는지도 업데이트 된다.
- *
- * -----------------------
- *  구현 계획:
- * 1. 체크 버튼을 만들자
- * 2. 체크 버튼의 css를 토글하자
- * 3. 토글한 li를 현재 배열에 업데이트하자
- */
 function deleteTodo(event) {
   const li = event.target.parentElement;
 
-  if (li.classList.contains("click")) {
+  if (li.classList.contains(CLICK)) {
     clickLength--;
   }
   li.remove();
@@ -39,7 +26,7 @@ function deleteTodo(event) {
 function checkTodo(event) {
   const li = event.target.parentElement;
 
-  li.classList.toggle("click");
+  li.classList.toggle(CLICK);
 
   toDos.map(item => {
     if (item.id === parseInt(li.id)) {
@@ -77,7 +64,7 @@ function paintToDo(newTodo) {
 
   // 초기값 설정
   if (newTodo.check === true) {
-    li.classList.toggle("click");
+    li.classList.toggle(CLICK);
     clickLength++;
   }
   const span = document.createElement("span");
