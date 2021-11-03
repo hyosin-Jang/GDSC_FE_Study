@@ -1,6 +1,8 @@
 const toDoForm=document.getElementById("todo-form");
 const toDoInput=document.querySelector("#todo-form input");
 const ToDoList=document.getElementById("todo-list");
+
+
 const TODOS_KEY="todos";
 const TODOS_DONE_KEY="todo_done";
 let ToDos=[]; /*start with empty todo elements */
@@ -38,19 +40,20 @@ function checkTodo(event){
 function paintToDo(newTodoObj){
  const todo_li=document.createElement("li"); /*create li HTML tag*/
  todo_li.id=newTodoObj.id;/* li tag attribution id is same with todo id*/
+ const todo_check=document.createElement("button"); /*create button HTML tag*/
+ todo_check.innerText="💙";
+ todo_check.addEventListener("click",checkTodo);
  const todo_span=document.createElement("span"); /*create span HTML tag */
  todo_span.innerText=newTodoObj.text; /*show newTodo value in span*/
 
  const todo_delete=document.createElement("button"); /*create button HTML tag*/
- todo_delete.innerText="❌"
+ todo_delete.innerText="➖";
  todo_delete.addEventListener("click",deleteTodo);
- const todo_check=document.createElement("button"); /*create button HTML tag*/
- todo_check.innerText="⭕";
- todo_check.addEventListener("click",checkTodo);
 
- todo_li.appendChild(todo_span); /*make span tag go inside of li tag*/
- todo_li.appendChild(todo_delete); /*make delete button tag go inside of li tag*/
- todo_li.appendChild(todo_check);/*make check button tag go inside of li tag*/
+ todo_li.appendChild(todo_check).classList.add("todo_check");/*make check button tag go inside of li tag*/
+ todo_li.appendChild(todo_span).classList.add("todo_text"); ; /*make span tag go inside of li tag*/
+ todo_li.appendChild(todo_delete).classList.add("todo_delete"); /*make delete button tag go inside of li tag*/
+ 
  ToDoList.appendChild(todo_li);
 
 }
