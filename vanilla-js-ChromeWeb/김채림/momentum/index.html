@@ -3,22 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        body, html { 
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .bgimg {
+            border: 0;
+            padding: 0; 
+            background-image: url('image.jpg');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        ul {
+            list-style: none; line-height: 30px; 
+        }
+        </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Momentum App</title>
+    <title>TodoList App</title>
 </head>
 <body>
     <form id="login-form" class="hidden" >
-      <input
+      <input class="login"
       required
       maxlength="15"
-       type="text", placeholder="What is your name?"/>
-        <button>Log IN</button>
+       type="text", placeholder="Write your name"/>
     </form>
 
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00</h2>
+    <h2 id="clock" class="clock">00:00:00</h2>
+    <div class="greeting">
+    <div id="greeting" class="hidden"></div>
+    </div>
+
+    <div class="todoform">
+        <form id="todo-form">
+           <input type="text"class="todoinput" placeholder="Write a To Do and Press Enter">
+        </form>
+    
+        <ul id="todo-list" class="todolist"></ul>
+    </div>
+    
+    <div id="song" >
+        <span class="song"></span>
+        <span class="author"></span>
+    </div>
+
+    <div id="weather">
+        <span class="weather"></span>
+        <span class="city"></span>
+    </div>
+    <img src="img/2.jpg" style="max-width:100%; max-height:auto;" >
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/songs.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
