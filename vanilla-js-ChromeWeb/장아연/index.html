@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheer" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" >
 
+    <script 
+    src="https://kit.fontawesome.com/2304817d58.js" 
+    crossorigin="anonymous"
+    ></script>
+
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'cid6kzk',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        </script>
+     <script 
+        src="https://use.fontawesome.com/releases/v5.2.0/js/all.js">
+    </script>
+
+    
+    <title>to-do-web</title>
+    
+</head>
+<body>
+    <section id="back">
+
+        <!--First : main : Clcok & Weather-->
+        <section id="main">
+            <div class="main__container">
+                <div class="main__info">
+                    <div class="main__clock">
+                        main__clock
+                    </div>
+                    <span>weather</span>
+                    <span>air</span>
+                    <span>location</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Second : daily report & daily quote-->
+        <section id="daily__quote">
+            <div class ="daily__container">
+                <!--<h1 class="text">Ayeon's <br>Daily<br> Report</h1>-->
+                <form id="login-form" class="hidden">
+                    <input class="login-name" required minlength="1" 
+                        type="text" placeholder="Enter your name">
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <div class ="quote__container">
+                
+                <div class="quote"></div>
+                <div class="author"></div>
+            </div>
+        </section>
+
+        <!--Third : Progress bar-->
+        <section id="progress">
+            <div class="progress__container">
+                <h1 class="progress__title">
+                    score
+                </h1>
+            </div>
+        </section>
+
+        <!--Fourth : Calender-->
+        <section id="Calender"> 
+            <div class="Calender__container">
+                <div class="Calender__header">
+                    <div class="year-month"></div>
+                    <div class="nav">
+                        <button class="nav-btn go-prev" >&lt;</button>
+                        <button class="nav-btn go-today">Today</button>
+                        <button class="nav-btn go-next">&gt;</button>
+                    </div>
+                </div>
+                <div class="Calender__main">
+                    <div class="days">
+                        <div class="day">일</div>
+                        <div class="day">월</div>
+                        <div class="day">화</div>
+                        <div class="day">수</div>
+                        <div class="day">목</div>
+                        <div class="day">금</div>
+                        <div class="day">토</div>
+                    </div>
+                    <div class="dates"></div>
+                </div>
+            </div>
+       
+        </section>
+
+        <!--Fifth : To-do-list-->
+        <section id="Todo">
+            <div class="Todo__container">
+                <div class="Todo__header">
+                    To Do List
+                </div>
+                <div class="Todo__body">
+                    <ul id="todo-list">
+                        <!--java script 통해 li 만들거임-->
+                    </ul>
+                    <form id="todo-form">
+                        <input type="text" placeholder="Write a To Do" required>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="Clock_Weather.js"></script>
+    <script src="Calender.js"></script>
+    <script src="Quote_Daily.js"></script>
+    <script src="Background.js"></script>
+    <script src="Todo_list.js"></script>
+</body>
+</html>
