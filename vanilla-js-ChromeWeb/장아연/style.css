@@ -195,7 +195,7 @@ section div {
   background-color: pink;
 }
 
-.progress__bar {
+#progress__bar {
   width: 90%;
   height: 80px;
   margin: 0 5%;
@@ -210,8 +210,8 @@ section div {
 .water {
   color: var(--color-light-white);
 }
-/*Fourth : Calender*/
 
+/*Fourth : Calender*/
 .Calender__container {
   padding-bottom: 100%;
   background-color: white;
