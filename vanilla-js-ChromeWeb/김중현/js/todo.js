@@ -20,9 +20,13 @@ function paintToDo(newTodo) {
    const li = document.createElement('li');
    li.id = newTodo.id;
    const span = document.createElement('span');
-   span.innerText = newTodo.text;
+   span.innerText = `📌 ${newTodo.text}`;
    const button = document.createElement('button');
-   button.innerText = '❌';
+   button.innerText = '✘';
+   button.style.padding = '0';
+   button.style.marginLeft = '5px';
+   button.style.border = '0';
+   button.style.background = `none`;
    button.addEventListener('click', deleteToDo);
    li.appendChild(span);
    li.appendChild(button);
