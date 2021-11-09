@@ -7,12 +7,10 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
 
-  --color-light-pink: #f9d5d3;
-  --color-pink: #eca4a6;
+  --color-light-pink: #ffb2ae;
+  --color-pink: #ee717b;
 
-  --color-custom-grey: #807f89;
-  --color-custom-dark-grey: #565b62;
-  --color-light-grey: #7c7979;
+  --color-light-grey: #c0c0c0;
   --color-grey: #616161;
   --color-dark-grey: #4d4d4d;
 
@@ -20,7 +18,7 @@
   --color-green: #bbc7ba;
   --color-dark-green: #99a89e;
 
-  --color-ligth-blue: #aab9bd;
+  --color-ligth-blue: #ccdceb;
   --color-blue: #88a3ad;
   --color-dark-blue: #77878f;
 
@@ -58,6 +56,20 @@ h2 {
 p {
   font-size: var(--font-regular);
   font-weight: var(--font-regular);
+}
+input {
+  appearance: none;
+  border: none;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
 }
 
 body {
@@ -137,7 +149,7 @@ section div {
   display: none;
 }
 
-input {
+.login-name {
   background-color: var(--color-ligth-white);
   border: none;
   margin: 10%;
@@ -179,12 +191,27 @@ input {
 /*Third : Progress bar*/
 .progress__container {
   width: 100%;
-  padding-bottom: 30%;
+  padding-bottom: 5%;
   background-color: pink;
 }
 
-/*Fourth : Calender*/
+#progress__bar {
+  width: 90%;
+  height: 80px;
+  margin: 0 5%;
+}
 
+.progress__water {
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.water {
+  color: var(--color-light-white);
+}
+
+/*Fourth : Calender*/
 .Calender__container {
   padding-bottom: 100%;
   background-color: white;
@@ -275,9 +302,59 @@ input {
 }
 /*Fifth : To-do-list*/
 .Todo__container {
-  width: 100%;
-  padding-bottom: 100%;
-  background-color: orange;
+  /*padding: 10% 10% 100% 10%;*/
+  padding: 10%;
+  background-color: var(--color-ligth-blue);
+}
+
+.Todo__header {
+  font-size: var(--font-large);
+  font-weight: var(--weight-semi-bold);
+  padding: 25px;
+  text-align: center;
+  background-color: var(--color-blue);
+  border-radius: 0;
+}
+
+.Todo__body {
+  padding: 25px;
+  margin-top: 30px;
+  background-color: var(--color-white);
+
+  border-radius: 0;
+}
+
+.Todo__body ul {
+  margin-bottom: 15px;
+}
+#todo-list li {
+  padding: 5px 0;
+  font-size: var(--font-regular);
+  display: flex;
+}
+
+.todo_check {
+  text-align: center;
+}
+.todo_text {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.todo_delete {
+  margin-left: auto;
+  /*우측 정렬*/
+  text-align: center;
+}
+
+.check > .todo_text {
+  text-decoration: line-through var(--color-grey);
+  color: var(--color-light-grey);
+}
+
+#todo-form {
+  margin: 0;
+  border-bottom: 2px solid var(--color-ligth-blue);
 }
 
 /* For below 768px screen width */
@@ -286,7 +363,7 @@ input {
     /*Font size*/
     --font-largest: 3rem;
     --font-large: 1.5rem;
-    --font-regular: 1.2rem;
+    --font-regular: 0.8rem;
     --font-small: 45%;
   }
   .quote {

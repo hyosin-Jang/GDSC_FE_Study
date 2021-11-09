@@ -25,6 +25,9 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
         </script>
+     <script 
+        src="https://use.fontawesome.com/releases/v5.2.0/js/all.js">
+    </script>
 
     
     <title>to-do-web</title>
@@ -52,7 +55,7 @@
             <div class ="daily__container">
                 <!--<h1 class="text">Ayeon's <br>Daily<br> Report</h1>-->
                 <form id="login-form" class="hidden">
-                    <input required minlength="1" 
+                    <input class="login-name" required minlength="1" 
                         type="text" placeholder="Enter your name">
                 </form>
                 <h1 id="greeting" class="hidden"></h1>
@@ -67,9 +70,14 @@
         <!--Third : Progress bar-->
         <section id="progress">
             <div class="progress__container">
-                <h1 class="progress__title">
-                    score
-                </h1>
+                <progress value="0" max="100" id="progress__bar"></progress>
+                <div class="progress__water">
+                    <i class="fas fa-tint fa-2x water" onclick="AddProgress()" ></i>
+                    <i class="fas fa-tint fa-2x water" onclick="AddProgress()" ></i>
+                    <i class="fas fa-tint fa-2x water" onclick="AddProgress()" ></i>
+                    <i class="fas fa-tint fa-2x water" onclick="AddProgress()" ></i>
+                    <i class="fas fa-tint fa-2x water" onclick="AddProgress()" ></i>
+                </div>
             </div>
         </section>
 
@@ -103,9 +111,17 @@
         <!--Fifth : To-do-list-->
         <section id="Todo">
             <div class="Todo__container">
-                <h1 class="Todo__title">
-                    Todo
-                </h1>
+                <div class="Todo__header">
+                    To Do List
+                </div>
+                <div class="Todo__body">
+                    <ul id="todo-list">
+                        <!--java script 통해 li 만들거임-->
+                    </ul>
+                    <form id="todo-form">
+                        <input type="text" placeholder="Write a To Do" required>
+                    </form>
+                </div>
             </div>
         </section>
     </section>
@@ -113,5 +129,7 @@
     <script src="Calender.js"></script>
     <script src="Quote_Daily.js"></script>
     <script src="Background.js"></script>
+    <script src="Progress_bar.js"></script>
+    <script src="Todo_list.js"></script>
 </body>
 </html>

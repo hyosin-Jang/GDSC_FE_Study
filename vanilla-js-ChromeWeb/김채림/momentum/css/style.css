@@ -1,0 +1,180 @@
+.greeting{
+    margin: 0;
+    position: absolute;
+    top: 17%;
+    left: 33%;
+    margin-top: -50px;
+    margin-left: -50px;
+    color:silver;
+    font-family:"Malgun Gothic";
+    font-size:xx-large;
+}
+.song{
+    margin: 0;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: gray;
+    font-family:"Malgun Gothic";
+    font-weight: lighter;
+}
+.author{
+    margin: 0;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: gray;
+    font-family:"Malgun Gothic";
+    font-weight: lighter;
+}
+.clock {
+    margin: 0;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: gray;
+    font-family:"Malgun Gothic";
+    font-weight: lighter;
+}
+
+.login{
+    margin: 0;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color: whitesmoke;
+    font-family:"Malgun Gothic";
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+}
+.login::placeholder{
+    color: silver;
+    font-family:"Malgun Gothic";
+    font-size: large;
+}
+.todoform{
+    height: 35%;
+    width: 70%;
+    border : none;
+    border-radius : 50px;
+    background-color: gray;
+    opacity: 0.7;
+    margin: 0;
+    padding: 40px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+}
+.todoinput{
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-family:"Malgun Gothic";
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 2px solid silver;
+    color: whitesmoke;
+
+}
+.todoinput::placeholder{
+    color: silver;
+    font-family:"Malgun Gothic";
+}
+.todoform.todolist{
+    list-style: none;
+    padding-left:0px;
+    margin:0 ;
+    position: absolute;
+    top: 50px ;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-family:"Malgun Gothic";
+    font-weight: lighter;
+    color: silver;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 10rem;
+}
+.todolist.toDoList_element {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    justify-content: space-between;
+    opacity: 0.9;
+    transition: all 1s ease;
+  }
+
+.toDoList_element{
+    font-family:"Malgun Gothic";
+    font-weight: lighter;
+    color:lightyellow;
+}
+
+  .todoform.todolist.toDoList_element button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: all 1s ease;
+  }
+
+  .toDoList_Erase, .toDoList_Done {
+    background-color:transparent;
+    border: 0;
+    outline: 0;
+  } 
+  .toDoList_Done{
+    position: absolute;
+    right: 80px;
+  }
+  .toDoList_Erase{
+    position: absolute;
+    right: 50px;
+  }
+  .checked{
+    text-decoration: line-through;
+  }
+.hidden{
+    display: none;
+}
+
+.weather{
+    margin: 0;
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    transform: translate(-50%, -50%); 
+    font-family:"Malgun Gothic";
+    font-weight: lighter;
+    color: silver;
+}
+
+.city{
+    margin: 0;
+    position: absolute;
+    top: 32%;
+    right: 0%;
+    transform: translate(-50%, -50%); 
+    font-family:"Malgun Gothic";
+    font-weight: lighter;
+    color: silver;
+}
