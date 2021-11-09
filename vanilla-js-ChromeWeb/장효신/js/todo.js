@@ -20,6 +20,9 @@ function deleteTodo(event) {
   saveToDos();
 
   allLength--;
+  if (toDos.length === 0) {
+    toDoList.classList.add("hidden");
+  }
   paintPercent();
 }
 
@@ -85,6 +88,9 @@ function paintToDo(newTodo) {
   li.appendChild(deleteButton);
 
   span.innerText = newTodo.text;
+  toDoList.classList.remove("hidden");
+  console.log("length", toDos.length);
+
   toDoList.appendChild(li);
 }
 
