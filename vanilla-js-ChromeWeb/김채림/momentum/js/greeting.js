@@ -22,7 +22,7 @@ function handleLinkClick(event){
 }
 
 function paintGreetings(username){
-    greeting.innerText=`Hello ${username}`;
+    greeting.innerText=`${username}'s to do list`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
