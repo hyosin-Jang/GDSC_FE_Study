@@ -8,23 +8,32 @@
          href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
          rel="stylesheet"
       />
+
       <link rel="stylesheet" href="css/style.css" />
       <title>ToDo App</title>
    </head>
    <body>
       <div class="img">
-         <div id="weather">
-            <span id="weather-temp"></span>
-            <span id="location"></span>
+         <div class="section"></div>
+               <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+               </div>
          </div>
-         <div id="quote-box">
-            <div>〰</div>
-            <div id="quote">
-               <span id="quote-line"></span>
-               <span id="quote-author"></span>
+         <div class="sidebar">
+            <div id="weather">
+               <span id="weather-temp"></span>
+               <span id="location"></span>
             </div>
-            <div>〰</div>
+            <div id="quote-box">
+               <div>〰</div>
+               <div id="quote">
+                  <span id="quote-line"></span>
+                  <span id="quote-author"></span>
+               </div>
+               <div>〰</div>
+            </div>
          </div>
+
          <div class="wrapper">
             <form class="hidden" id="login-form">
                <input
@@ -49,5 +58,7 @@
       <script src="js/backgorund.js"></script>
       <script src="js/todo.js"></script>
       <script src="js/weather.js"></script>
+      <script src="js/sidebar.js"></script>
+      <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
    </body>
 </html>
