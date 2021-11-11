@@ -5,6 +5,7 @@ const toDoList = document.getElementById('todo-list');
 const TODOS_KEY = 'todos';
 
 let toDos = [];
+//let percentage;
 
 function saveToDos() {
    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
@@ -20,6 +21,19 @@ function toggleToDo(event) {
       target.style.color = 'white';
    }
 }
+
+/*
+function getPercentage() {
+   const parsedToDos = JSON.parse(savedToDos);
+   toDos = parsedToDos;
+
+   if (toDoList.childElementCount !== 0) {
+      percentage = (done / parsedToDos.length) * 100;
+   } else {
+      percentage = 0;
+   }
+}
+*/
 
 function deleteToDo(event) {
    const li = event.target.parentElement;
