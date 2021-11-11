@@ -10,6 +10,17 @@ function saveToDos() {
    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
+function toggleToDo(event) {
+   const target = event.target;
+   if (target.style.textDecoration !== 'line-through') {
+      target.style.textDecoration = 'line-through';
+      target.style.color = 'gray';
+   } else {
+      target.style.textDecoration = 'none';
+      target.style.color = 'white';
+   }
+}
+
 function deleteToDo(event) {
    const li = event.target.parentElement;
    li.remove();
@@ -47,6 +58,7 @@ function handleToDoSubmit(event) {
 }
 
 toDoForm.addEventListener('submit', handleToDoSubmit);
+toDoList.addEventListener('click', toggleToDo);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
