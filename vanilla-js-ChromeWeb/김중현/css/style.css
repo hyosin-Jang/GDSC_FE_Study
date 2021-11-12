@@ -1,0 +1,215 @@
+* {
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   box-sizing: border-box;
+   color: ivory;
+   text-align: center;
+}
+
+.hidden {
+   display: none;
+}
+
+body {
+   margin: 0;
+   height: 100%;
+   position: relative;
+}
+
+.section {
+   width: calc(100% - 430px);
+   margin-right: 430px;
+   transition: all 0.6s ease;
+}
+
+.hamburger {
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   right: 440px;
+   top: 15px;
+}
+
+body.active .sidebar {
+   right: -430px;
+}
+
+body.active .section {
+   margin-left: 0;
+   width: 100%;
+}
+body.active .hamburger {
+   position: absolute;
+   right: 15px;
+   top: 15px;
+   transition: all 0.6s ease;
+}
+
+body .hamburger {
+   transition: all 0.6s ease;
+}
+
+.img {
+   min-height: 100%;
+   min-width: 1024px;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+.sidebar {
+   background: rgba(0, 0, 0, 0.4);
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 430px;
+   height: 100%;
+   padding: 30px 0;
+   transition: all 0.5s ease;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 150px;
+}
+
+#login-text {
+   font-size: 50px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   background: none;
+   border: none;
+}
+
+#weather {
+   height: auto;
+   width: 400px;
+   padding: 15px;
+   margin: auto;
+   line-height: 30px;
+   position: absolute;
+   top: 20px;
+   right: 15px;
+   border-radius: 0.7rem;
+   background-color: rgba(0, 0, 0, 0.234);
+}
+
+#weather-temp,
+#location {
+   display: block;
+}
+
+#quote-box {
+   font-family: 'Shadows Into Light', cursive;
+   height: auto;
+   width: 400px;
+   top: 125px;
+   padding: 15px;
+   margin: auto;
+   line-height: 20px;
+   position: absolute;
+   right: 15px;
+   border-radius: 0.7rem;
+   background-color: rgba(0, 0, 0, 0.234);
+}
+
+#quote {
+   margin: 3px;
+   padding: 0;
+   height: auto;
+}
+
+#quote-line,
+#quote-author {
+   font-family: 'Shadows Into Light', cursive;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /*
+   height: 30px;
+   line-height: 30px;
+   */
+}
+
+#quote-line {
+   line-height: 20px;
+}
+
+#greeting {
+   font-size: 4rem;
+   margin-bottom: 20px;
+}
+
+#clock {
+   font-size: 8rem;
+   margin: 0;
+   border-bottom-style: solid;
+}
+
+#todo-form input {
+   font-size: 20px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   border: none;
+   background: none;
+   border-bottom-style: solid;
+   border-color: rgba(201, 201, 201, 0.301);
+   transition: all 0.2s ease-in-out;
+}
+
+#todo-form input:hover {
+   border-color: ivory;
+   animation: pulse 1s infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes pulse {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.06);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+#todo-form input:focus::placeholder {
+   color: transparent;
+}
+
+#todo-list {
+   font-size: 20px;
+   list-style: none;
+   padding: 20px;
+   margin: auto;
+   height: auto;
+   width: 400px;
+   border-radius: 15px;
+   background-color: rgba(201, 201, 201, 0.301);
+}
+
+li {
+   text-align: left;
+   line-height: 40px;
+   margin-left: 20px;
+   transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+   text-shadow: 0px -2px 0px rgba(0, 0, 0, 1), 0 0 5px rgba(255, 255, 255, 0.8),
+      0 -4px 15px rgba(255, 255, 255, 0.2);
+   transform: scale(1.07);
+}
+
+li button {
+   color: red;
+}

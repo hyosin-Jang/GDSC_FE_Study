@@ -4,20 +4,61 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
-      <title>Momentum App</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="css/style.css" />
+      <title>ToDo App</title>
    </head>
    <body>
-      <form class="hidden" id="login-form">
-         <input
-            required
-            maxlength="15"
-            type="text"
-            placeholder="What is your name?"
-         />
-         <input type="submit" value="Log In" />
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-      <script src="app.js"></script>
+      <div class="img">
+         <div class="section"></div>
+               <div class="hamburger">
+                  <i class="fas fa-bars"></i>
+               </div>
+         </div>
+         <div class="sidebar">
+            <div id="weather">
+               <span id="weather-temp"></span>
+               <span id="location"></span>
+            </div>
+            <div id="quote-box">
+               <div>〰</div>
+               <div id="quote">
+                  <span id="quote-line"></span>
+                  <span id="quote-author"></span>
+               </div>
+               <div>〰</div>
+            </div>
+         </div>
+
+         <div class="wrapper">
+            <form class="hidden" id="login-form">
+               <input
+                  id="login-text"
+                  required
+                  maxlength="15"
+                  type="text"
+                  placeholder="What is your name?"
+               />
+            </form>
+            <h1 class="hidden" id="greeting"></h1>
+            <h2 id="clock">00:00:00</h2>
+            <form id="todo-form">
+               <input type="text" placeholder="Write a To Do!" required />
+            </form>
+            <ul id="todo-list"></ul>
+         </div>
+      </div>
+      <script src="js/greetings.js"></script>
+      <script src="js/clock.js"></script>
+      <script src="js/quotes.js"></script>
+      <script src="js/backgorund.js"></script>
+      <script src="js/todo.js"></script>
+      <script src="js/weather.js"></script>
+      <script src="js/sidebar.js"></script>
+      <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
    </body>
 </html>
