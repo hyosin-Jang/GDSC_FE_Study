@@ -5,14 +5,7 @@
   color: white; /* text color */
   text-align: center;
   margin: 0;
-  font-family: "Gowun Dodum", sans-serif;
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 li {
@@ -54,23 +47,60 @@ ul li.click {
   text-decoration: line-through;
 }
 
-.item-1 {
+#login-cell {
   padding-top: 60px;
   grid-column: 1 / span 2;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 250px);
-  grid-auto-columns: minmax(200px, 400px);
-  grid-gap: 30px;
-  grid-auto-rows: minmax(150px, auto);
-  position: absolute;
-  top: 10%;
-  width: 100%;
-  left: 30%;
+#login-form input {
+  font-size: 30px;
+  padding-top: 20px;
+  width: 400px;
+  background: none;
+  border: 0;
+  box-shadow: 0 3px 0 0 #ffffff;
 }
 
+#login-form button {
+  font-size: 20px;
+}
+input:focus {
+  outline: none;
+}
+
+.grid-container {
+  display: grid;
+  margin: 10px;
+  grid-auto-columns: minmax(max-content, auto-fit);
+  grid-gap: 30px;
+  grid-auto-rows: minmax(max-content, auto);
+  position: absolute;
+  top: 10%;
+  width: 50%;
+  left: 18%;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+  .grid-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .grid-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    width: 20%;
+  }
+}
+
+#todo-form {
+  padding-bottom: 20px;
+}
 #todo-form input {
   border-top: none;
   border-left: none;
@@ -79,12 +109,24 @@ ul li.click {
   border-bottom: 3px solid black;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  margin: 20px;
+}
+
 #todo-list {
   list-style: none;
   padding: 20px;
   margin: auto;
   height: auto;
   width: 250px;
+  line-height: 2;
   border-radius: 20px;
   /* text-align: left !important; */
   background-color: rgba(0, 0, 0, 0.5);
@@ -101,7 +143,16 @@ ul li.click {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#clock,
+.item-3 {
+  line-height: 2;
+  padding: 20px;
+  margin: auto;
+  height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 40px;
+}
 #weather {
   line-height: 2;
   padding: 20px;

@@ -10,8 +10,12 @@
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>Momentum App</title>
   </head>
+  
   <body>
     <div class="img">
       <div class="img-cover"></div>
@@ -20,9 +24,10 @@
         <nav id="menu">
           <h2>Todo list</h2>
           <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" />
+            <input type="text" required placeholder="Write a To Do and Press Enter" />
           </form>
-          <ul id="todo-list"></ul>
+
+          <ul id="todo-list" class="hidden"></ul>
           <div id="percent">
             <h2></h2>
             <h2></h2>
@@ -31,6 +36,7 @@
       </div>
 
       <div class="grid-container">
+        <div id="login-cell">
         <form class="hidden" id="login-form">
           <input
             type="text"
@@ -38,21 +44,30 @@
             maxlength="15"
             placeholder="What is your name?"
           />
-          <button>Log In</button>
-        </form>
-        <div class="item-1">
-          <h1 id="greeting" class="hidden"></h1>
+
+          </form>
+          <div class="item-1">
+            <h1 id="greeting" class="hidden"></h1>
+          </div>
+
         </div>
+
+       
+        
         <div class="item-2" id="weather">
-          <span></span>
-          <span></span>
+          <img class="curIcon"></img>
+          <div class="curTemp"></div>
+          <div class="city"></div>
         </div>
         <div class="item-3">
+         
+         
+         
           <h2 id="clock">00:00</h2>
         </div>
         <div id="quote">
-          <span></span>
-          <span></span>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
