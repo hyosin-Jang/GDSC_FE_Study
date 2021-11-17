@@ -21,3 +21,20 @@ GDSC EWHA Front-End Toy Project Study
 |season 1 |**크롬웹/투두리스트**|[repo](https://github.com/JangAyeon/GDSC_FE_Study/tree/main/vanilla-js-ChromeWeb)|
 |season 2|**영화 소개 웹사이트**|[repo](https://github.com/JangAyeon/GDSC_FE_Study/tree/main/react_basic)|
 |테스트1|테스트2||
+
+
+## Study
+### Season 1 : [Nomad Coders "바닐라 JS로 크롬 앱 만들기"](https://nomadcoders.co/javascript-for-beginners)
+|Date|Topic|Post| 발표자|
+|:--:|:--:|:--:|:--:|
+|10/7|변수, 자료형, JS DOM, 함수|[📚](https://gdscewha.tistory.com/entry/1%EC%A3%BC%EC%B0%A8-%EB%B0%94%EB%8B%90%EB%9D%BC-JS%EB%A1%9C-%ED%81%AC%EB%A1%AC-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0?category=969301)|김중현, 김채림|
+|10/14|map, filter, reduce, web storage|[📚](https://gdscewha.tistory.com/entry/2%EC%A3%BC%EC%B0%A8-%EB%B0%94%EB%8B%90%EB%9D%BC-JS%EB%A1%9C-%ED%81%AC%EB%A1%AC-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0?category=969301)|장효신,하수민|
+|11/4|바닐라 JS로 달력 구현|[📚](https://gdscewha.tistory.com/entry/3%EC%A3%BC%EC%B0%A8-%EB%B0%94%EB%8B%90%EB%9D%BC-JS%EB%A1%9C-%ED%81%AC%EB%A1%AC-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0?category=969301)|장아연|
+
+### Season 2 : [리액트를 다루는 기술](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791160508796)
+|Date|Topic|Post|발표자|
+|:--:|:--:|:--:|:--:|
+|10/7|2. JSX|[📚]()|장아연|
+|10/7|3. Component|[📚]()|하수민|
+|10/14|4. Event Handling|[📚]()|.|
+|10/14|5. ref:DOM|[📚]()|.|
