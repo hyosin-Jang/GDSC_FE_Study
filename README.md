@@ -34,7 +34,7 @@ GDSC EWHA Front-End Toy Project Study
 ### Season 2 : [리액트를 다루는 기술](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791160508796)
 |Date|Topic|Post|발표자|
 |:--:|:--:|:--:|:--:|
-|11/11|2. JSX|[📚]()|장아연|
-|11/11|3. Component|[📚]()|하수민|
+|11/11|2. JSX|[📚](https://gdscewha.tistory.com/entry/4%EC%A3%BC%EC%B0%A8-JSX-Component)|장아연|
+|11/11|3. Component|[📚](https://gdscewha.tistory.com/entry/4%EC%A3%BC%EC%B0%A8-JSX-Component)|하수민|
 |11/18|4. Event Handling|[📚]()|.|
 |11/18|5. ref:DOM|[📚]()|.|
